@@ -4,7 +4,7 @@
 .container {
   margin: env(safe-area-inset-top) 
           env(safe-area-inset-right) 
-          env(safe-area-inset-bottom) 
+          env(safe-area-inset-bottom) , 5px case there is no safe area as default 5px would be written
           env(safe-area-inset-left) !important;
 }
 

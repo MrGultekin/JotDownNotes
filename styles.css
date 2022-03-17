@@ -111,6 +111,7 @@ body>#toolbar {
     margin: 0;
     width: 100%;
     background-color: var(--color-toolbar);
+    padding-bottom: 32px;
 }
 
 
