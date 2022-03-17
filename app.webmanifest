@@ -1,6 +1,22 @@
 {
-"name": "Jot Masters, best ever App to note it down.",
-"shor_name": "Jot Masters",
-"start_url": "./", // To run the app always from the landing page
-"orientation": "portrait", // "all" "landscape" means to work app in vertical or horizontal both directions
+  "name": "Jot Masters, best ever App to note it down.",
+  "short_name": "Jot Masters",
+  "start_url": "./?utm_source=pwa",
+  "theme_color": "#ffc252",
+  "scope": "./",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+
+  ]
 }
+
