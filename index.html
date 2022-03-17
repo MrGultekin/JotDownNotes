@@ -4,12 +4,14 @@
     <meta name="viewport" content="width=device-width,viewport-fit=cover">
 <!--    viewport-fit=cover added for view problem-->
     <title>Store notes and learning goals while you are coding</title>
-    <link rel="manifest" href="app.webmanifest">
+    <link rel="manifest" href="app.webmanifest?1">
 <!--    only 1 manifest is possible-->
     <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
     <meta name="theme-color" content="#ffc252">
     <link rel="apple-touch-icon" href="icons/icon-512.png">
+    <script src="sw-register.js"></script>
+<!--register sw in this manner-->
 </head>
 
 <body>
@@ -32,6 +34,19 @@
             <button id="btnLearn">
                 <span class="icon">school</span>                
                 Learn                 
+            </button>
+        </li>
+        <li>
+        <button id="btnShare">
+            <span class="icon">share</span>
+            Share
+        </button>
+        </li>
+
+        <li id="itemInstall">
+            <button id="btnInstall">
+                <span class="icon">download</span>
+                Install
             </button>
         </li>
     </ul>
