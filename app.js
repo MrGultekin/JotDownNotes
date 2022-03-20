@@ -2,7 +2,10 @@ let notes = [];
 
 // Registering all the event handlers when the page loads
 document.addEventListener("DOMContentLoaded", event => {
-    renderNotes(); // This is a function
+    if (localStorage.getItem("notes")) {
+        notes = JSON.parse(localStorage.getItem("notes"));
+    }
+    renderNotes();
  
     document.querySelector("form").addEventListener("submit", event => {
         event.preventDefault();
@@ -63,9 +66,13 @@ function renderNotes() {
             if (confirm("Do you want to delete this note?")) {
                 notes.splice(index, 1);
                 renderNotes();
+                save();
             }
         });
         li.appendChild(deleteButton);
         ul.appendChild(li);
     })
+}
+function save() {
+    localStorage.setItem("notes", JSON.stringify(notes));
 }
